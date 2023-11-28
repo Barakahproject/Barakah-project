@@ -32,7 +32,9 @@ Organization Repository [Link](https://github.com/Barakahproject/Barakah-project
 
 Project Brief [Link](https://drive.google.com/file/d/1N-H7coPP_w5kpWO4gsPFz3MvCUdHoQxa/view?usp=sharing).
 
-Documentation [Link](https://drive.google.com/file/d/1km9hNA6CjxSMn6X8F2IkxtT_LVjb9T56/view?usp=sharing).
+Documentation [Link](https://docs.google.com/document/d/162bQBZFlF41hLS3wOOo2r4haDScfO6WuzLR1JENBRSc/edit?usp=sharing).
+
+Presentation [Link](https://docs.google.com/presentation/d/1b1dX3TwHHRV0Ui8bhMX7DIto-ygDeYVv/edit?usp=sharing&ouid=103107070717920185580&rtpof=true&sd=true).
 
 ### Figma Link
 
