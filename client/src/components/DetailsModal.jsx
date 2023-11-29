@@ -6,17 +6,21 @@ import swal from "sweetalert";
 import Cookies from "js-cookie"
 
 
-const PostForm = ({ showModal, onClose,id }) => {
+const PostForm = ({ showModal, onClose,id,role_id }) => {
   const [postData, setPostData] = useState([]);
   // console.log(postData[0].type);
+  console.log("hi"+role_id);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const token = Cookies.get("token");
         axios.defaults.headers.common["Authorization"] = token;
+        console.log(role_id);
+        const endpoint = role_id == 3 ? `http://localhost:5000/getconfirmhistorydonate/${id}` :  `http://localhost:5000/getconfirmhistoryorder/${id}`;
 
-        const response = await axios.get(`http://localhost:5000/getconfirmhistory/${id}`); // Replace '1' with the actual post ID you want to display
+        const response = await axios.get(endpoint); 
+console.log(id);
         setPostData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -30,15 +34,15 @@ const PostForm = ({ showModal, onClose,id }) => {
     try {
       // Prepare the data object with all form details
       const formData = {
-        type:postData.type,
-        details:postData.details,
-        qty:postData.qty,
-        city:postData.city,
-        expired:postData.expired,
-        expiry_date:postData.expiry_date,
-        free:postData.free,
-        price:postData.price,
-        additionalnotes:postData.additionalnotes,
+        type:postData[0]?.type,
+        details:postData[0]?.details,
+        qty:postData[0]?.qty,
+        city:postData[0]?.city,
+        expired:postData[0]?.expired,
+        expiry_date:postData[0]?.expiry_date,
+        free:postData[0]?.free,
+        price:postData[0]?.price,
+        additionalnotes:postData[0]?.additionalnotes,
         // Add other form fields as needed
       };
 const token = Cookies.get("token");
@@ -124,13 +128,14 @@ axios.defaults.headers.common["Authorization"] = token;
         </div>
 
         <div className="flex justify-end gap-3 mt-2">
+         { role_id ==3 ? (
           <button
             type="button"
             onClick={handleRepost}
             className="text-white p-2 bg-blue "
           >
             Repost
-          </button>
+          </button>):("")}
           <button
             type="button"
             onClick={onClose}

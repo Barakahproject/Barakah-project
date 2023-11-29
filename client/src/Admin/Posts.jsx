@@ -74,7 +74,7 @@ const Posts = () => {
           </thead>
           <tbody>
             {postsTableRows.map(
-              ({ type, username, role_id, created_at, donation_id ,status}, index) => {
+              ({ type, username, role_id, date, donation_id ,status}, index) => {
                 const isEvenRow = index % 2 === 0;
                 const classes = isEvenRow
                   ? "p-4 bg-blue-gray-50"
@@ -115,7 +115,7 @@ const Posts = () => {
                         color="blue-gray"
                         className="font-normal"
                       >
-                        {created_at}
+                        {date}
                       </Typography>
                     </td>
                     <td className={classes}>

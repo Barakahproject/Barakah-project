@@ -51,7 +51,7 @@ const Details = () => {
     <div className="bg-background pt-28 relative pb-24">
       <div className="max-w-[50%] mx-auto bg-white overflow-hidden shadow-lg">
         <img
-          src={food}
+          src={postDetails.imageurl}
           alt="Food"
           className="w-[35%] mx-auto h-64 object-cover absolute top-16 left-96 ml-12"
         />

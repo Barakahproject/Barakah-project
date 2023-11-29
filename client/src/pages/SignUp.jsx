@@ -263,9 +263,16 @@ const SignUp = () => {
                   required
                   className="block w-full p-2 mt-1 border h-10 "
                 >
-                  <option value="city1">City 1</option>
-                  <option value="city2">City 2</option>
-                  <option value="city3">City 3</option>
+                  <option value="Amman">Amman</option>
+                  <option value="Zarqa">Zarqa</option>
+                  <option value="Irbid">Irbid</option>
+                  <option value="AlSalt">AlSalt</option>
+                  <option value="Ajloun">Ajloun</option>
+                  <option value="Aqaba">Aqaba</option>
+                  <option value="Maan">Maan</option>
+                  <option value="Karak">Karak</option>
+                  <option value="Jerash">Jerash</option>
+                  <option value="Altafila">Altafila</option>
                 </select>
               </div>
             </div>

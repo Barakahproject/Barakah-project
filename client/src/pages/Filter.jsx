@@ -428,7 +428,7 @@ export default function Filter() {
                     >
                       <img
                         className="w-full h-32 object-cover"
-                        src={food}
+                        src={post.imageurl}
                         alt="Food Image"
                       />
                       <div className="px-4 py-2 bg-white">
@@ -464,7 +464,7 @@ export default function Filter() {
                           Posted by: {post.username}
                         </p>
                         <p className="text-gray-700 text-xs flex justify-end">
-                          {post.created_at}
+                          {post.date}
                         </p>
                       </div>
                     </div>

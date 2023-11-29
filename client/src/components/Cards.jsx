@@ -19,7 +19,7 @@ const Cards = () => {
             key={card.donation_id}
             className="max-w-sm w-[350px] overflow-hidden shadow-lg"
           >
-            <img className="w-full" src={food} alt="Food Image" />
+            <img className="w-full" src={card.imageurl} alt="Food Image" />
             <div className="px-6 py-4 bg-white h-40">
               <div className="font-bold text-xl mb-2 text-blue">
                 {card.type}
